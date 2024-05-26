@@ -1,0 +1,103 @@
+h1{
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+h3{
+    font-size: 28px;
+    line-height: 33.6px;
+}
+
+h4{
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h6{
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+
+@mixin fs-1 {
+    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+@mixin fs-2 {
+    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@mixin fs-3 {
+    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+@mixin fs-4 {
+    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+@mixin fs-5 {
+    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin fs-6 {
+    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+@mixin h2{
+    text-align: center;
+    margin-bottom: 80px;
+    color: $gray-700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+
+    &::before {
+        display: inline-block;
+        content: "";
+        background: url("/assets/images/title-left.svg");
+        width: 100px;
+        height: 6px;
+        margin-right: 16px;
+
+    }
+
+    &::after {
+        display: inline-block;
+        content: "";
+        background: url("/assets/images/title-right.svg");
+        width: 100px;
+        height: 6px;
+        margin-left: 16px;
+
+    }
+}
