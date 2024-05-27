@@ -5,10 +5,16 @@
         background-repeat: no-repeat;
         padding: 248px 0;
 
+        &__img{
+            display: none;
+        }
+
         &__txt {
-            h1 {
+            h2 {
                 color: $gray-700;
                 margin-bottom: 24px;
+                font-size: 40px;
+                line-height: 48px;
             }
 
             .icon-wrap {
@@ -30,6 +36,44 @@
             color: $gray-400;
             @include fs-6;
             margin-bottom: 60px;
+        }
+
+        .icon-wrap{
+            img{
+                width: 56px;
+                height: 56px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            background-image: none;
+            background-position: top;
+            padding: 0;
+
+            &__img{
+                display: block;
+            }
+
+            &__txt{
+                padding: 40px 0;
+                text-align: center;
+                h2{
+                    font-size: 32px;
+                    line-height: 38.4px;
+                }
+            }
+            &__note {
+                margin-bottom: 24px;
+            }
+
+            .icon-wrap{
+                justify-content: center;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
         }
     }
 
@@ -194,12 +238,81 @@
                 }
             }
         }
+
+        @media (max-width: 768px) {
+            h2{
+                margin-bottom: 40px;
+            }
+            &__card {
+                height: 100vh;
+
+                .img-wrap{
+                    padding: 90px 40px 0 40px;
+                }
+
+                .container{
+                    display: block;
+                }
+            }
+
+            .card-1,.card-2,.card-3{
+                .p-portfolio__info{
+                    margin: 0;
+                }
+                .container{
+                    padding: 0;
+                }
+            }
+
+            .card-2{
+                &::after{
+                    width: 0;
+                }
+            }
+
+            &__info{
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                background-color: $white;
+                border-radius: 0;
+                width: 100%;
+            }
+
+            &__txt{
+                padding: 24px 0 48px 0;
+                position: absolute;
+                bottom: 0;
+                background-color: $white;
+                width: 100%;
+                h3{
+                    color: $gray-800;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                p{
+                    color: $gray-600;
+                    @include fs-6;
+                    padding: 0 24px;
+                    margin-bottom: 16px;
+                }
+                ul{
+                    border: 0;
+                    margin-bottom: 20px;
+                    padding: 0;
+                    justify-content: center;
+
+                    li{
+                        background-color: $gray-200;
+                        margin: 0 4px;
+                    }
+                }
+            }
+        }
     }
 
     &-intro {
         background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true");
-
-        padding: 120px 0 ;
 
         h2 {
             @include h2;
@@ -246,6 +359,29 @@
 
         }
 
+        @media (max-width: 768px){
+            h3{
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 24px;
+            }
+
+            &__wrap{
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+
+            &__card{
+                margin-bottom: 24px;
+                p{
+                    font-size: 24px;
+                    line-height: 28.8px;
+                
+                }
+            }
+        }
     }
 
     &-article{
@@ -269,8 +405,12 @@
         }
         &__card{
             margin: 0 12px;
-        }
 
+            img{
+                border-radius: 8px;
+                border: 1px solid $gray-200;
+            }
+        }
         &__info{
             display: flex;
             justify-content: space-between;
@@ -288,6 +428,32 @@
                 color: $gray-600;
             }
         }
+
+        
+        &__link{
+            display: none;
+        }
+
+        @media (max-width: 768px){
+
+            &__wrap{
+                flex-direction: column;
+                margin: 0;
+            }
+
+            &__card{
+                margin-bottom: 48px;
+            }
+
+            .c-pagedot{
+                display: none;
+            }
+
+            &__link{
+                display: block;
+                text-align: center;
+            }
+        }
     }
 
     &-topbn {
@@ -300,6 +466,8 @@
         &__wrapper {
             max-width: 670px;
             margin: auto;
+            position: relative;
+            padding: 70px 0;
 
             &::before {
                 content: " ";
@@ -307,6 +475,9 @@
                 width: 72px;
                 height: 72px;
                 display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0;
             }
 
             &::after {
@@ -315,6 +486,10 @@
                 width: 72px;
                 height: 72px;
                 display: inline-block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
             }
         }
 
@@ -324,18 +499,12 @@
             justify-content: center;
 
             h4 {
-                margin-bottom: 16px;
                 text-align: center;
                 position: relative;
                 display: inline;
                 text-align: center;
                 z-index: 3;
                 font-weight: 400;
-
-                &:nth-child(1) {
-                    margin-bottom: 24px;
-                }
-
 
                 &::after {
                     content: " ";
@@ -349,7 +518,9 @@
                 }
             }
 
-            &::before {}
+            &:nth-child(1) {
+                margin-bottom: 16px;
+            }
         }
 
         ul {
@@ -385,11 +556,49 @@
                 }
             }
         }
+        @media (max-width: 768px){
+            padding: 40px 0;
+            &__wrapper {
+                padding: 64px 0;
+                &::before{
+                    width: 64px;
+                    height: 64px;
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                    top: 0;
+                }
+                &::after{
+                    width: 0;
+                    height: 0;
+                }
+            }
+
+            &__title{
+                h4{
+                    @include fs-5;
+                    margin: 0 37.5px;
+                }
+
+                &:nth-child(1) {
+                    margin-bottom: 24px;
+                }
+            }
+
+            ul{
+                flex-direction: column;
+                li{
+                    margin-bottom: 20px;
+                    max-width: 100%;
+                    padding: 0 50px;
+                }
+            }
+        }
     }
 
     &-works {
         padding: 120px 0;
-
         &__wrap {
             display: flex;
             flex-wrap: wrap;

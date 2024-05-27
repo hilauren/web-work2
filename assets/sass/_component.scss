@@ -1,58 +1,111 @@
-.c{
-    &-nav{
-        &__container{
+.c {
+    &-nav {
+        &__container {
             position: relative;
             display: flex;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
             padding: 28px 0;
-            ul{
-                display: flex;
-                justify-content: center;
-                li{
-                    padding: 4px 8px;
-                    margin: 20px;
-                    border: 1px solid $white;
-                }
-    
-                li:hover{
-                    border: 1px solid $gray-500;
-                }
-    
-                li:active{
-                    border: 1px solid $gray-500;
-                }
+        }
+
+        &__itemwrap{
+            display: flex;
+            justify-content: center; 
+        }
+
+        &__item{
+            padding: 4px 8px;
+            margin: 20px;
+            border: 1px solid $white;
+            &:hover {
+                border: 1px solid $gray-500;
+            }
+
+            &:active {
+                border: 1px solid $gray-500;
             }
         }
-        &__image{
+
+        &__image {
             position: absolute;
             left: 0;
             height: 40px;
             width: auto;
         }
+        
+        &__menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            &__container{
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 8px 12px;
+                height: 56px;
+            }
+
+            &__image {
+                position: relative;
+                height: 33px;
+                width: auto;
+            }
+
+            &__menu {
+                display: block;
+            }
+            &__collapse{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 56px;
+                background-color: $white;
+
+                display: none;
+            }
+
+            &__itemwrap{
+                display: block;
+                flex-direction: column;
+                padding-top: 40px;
+                padding-bottom: 16px;
+            }
+
+            &__item{
+                text-align: center;
+                margin: 0 0 24px 0;
+            }
+        }
+
     }
-    
-    &-pagination{
-        ul{
+
+    &-pagination {
+        ul {
             display: flex;
             margin: 8px 0;
             justify-content: center;
-            li{
+
+            li {
                 border-radius: 4px;
                 width: 40px;
                 height: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                p{
+
+                p {
                     color: $gray-700;
                 }
-                &:hover{
+
+                &:hover {
                     background-color: $gray-200;
                 }
-                &:active{
+
+                &:active {
                     background-color: $gray-800;
-                    p{
+
+                    p {
                         color: $white;
                     }
                 }
@@ -60,44 +113,47 @@
         }
     }
 
-    &-pagedot{
-        &__wrap{
+    &-pagedot {
+        &__wrap {
             display: flex;
             justify-content: center;
 
-            li{
+            li {
                 background-color: $gray-300;
                 width: 12px;
                 height: 12px;
                 margin: 0 8px;
                 border-radius: 100%;
 
-                &.active{
+                &.active {
                     background-color: $black;
                 }
             }
         }
     }
-    
-    &-footer{
+
+    &-footer {
         background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
-        &__container{
+
+        &__container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            li{
+
+            li {
                 display: flex;
                 align-items: center;
-                img{
+
+                img {
                     margin-bottom: 24px;
                     margin: 0 8px 0 0;
                     padding: 0;
                 }
-                p{
+
+                p {
                     margin-bottom: 24px;
                     margin: 0;
                     padding: 0;
@@ -105,30 +161,53 @@
             }
         }
 
-        &__info{
-            img{
+        &__info {
+            img {
                 width: 160px;
                 margin-bottom: 24px;
             }
-            p{
+
+            p {
                 @include fs-5;
                 margin-bottom: 24px;
             }
-            a{
+
+            a {
                 font-size: 20px;
                 line-height: 24px;
                 color: $gray-500;
             }
         }
 
+
+        @media (max-width: 768px){
+            &__container{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            &__info{
+                margin-bottom: 40px;
+                text-align: center;
+                width: 100%;
+                img{
+                    width: 120px;
+                    margin-bottom: 24px;
+                }
+                p{
+                    @include fs-6;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
     }
-    
-    &-btn{
+
+    &-btn {
         display: inline-block;
         @include fs-5;
 
-        &--large{
-            width: 306px;
+        &--large {
             height: 72px;
             padding: 0 24px;
             display: flex;
@@ -137,18 +216,23 @@
             border: 1px solid $gray-400;
             background-color: $white;
             margin-bottom: 24px;
-            img{
+
+            img {
                 margin-right: 8px;
             }
-    
-            &.active{
+
+            &.active {
                 background-color: $black;
                 color: $white;
                 font-weight: 900;
             }
+
+            @media (max-width: 768px){
+                height: 64px;
+            }
         }
 
-        &--small{
+        &--small {
             background-color: $black;
             color: $white;
             display: inline-block;
@@ -161,9 +245,14 @@
             align-items: center;
             transition: all 0.5s ease;
 
-            &:hover{
+            &:hover {
                 background-color: $gray-700;
                 transition: all 0.5s ease;
+            }
+
+            @media (max-width: 768px){
+                @include fs-6;
+                padding: 8px 16px;
             }
         }
     }
