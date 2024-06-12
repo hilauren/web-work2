@@ -1,37 +1,38 @@
 h1 {
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
 }
 
 h2 {
   font-size: 32px;
-  line-height: 38.4px;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 28px;
-  line-height: 33.6px;
+  line-height: 1.2;
 }
 
 h4 {
   font-size: 24px;
-  line-height: 28.8px;
+  line-height: 1.2;
 }
 
 h5 {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 
 h6 {
   font-size: 16px;
-  line-height: 19.2px;
+  line-height: 1.2;
 }
 
 * {
   padding: 0;
   margin: 0;
   font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
+  line-height: 1.5;
 }
 
 ul li {
@@ -68,6 +69,10 @@ section {
 }
 .img-wrap img {
   width: 100%;
+}
+
+img {
+  vertical-align: middle;
 }
 
 button {
@@ -222,10 +227,8 @@ button {
   margin-bottom: 24px;
 }
 .c-footer__info p {
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
   margin-bottom: 24px;
 }
 .c-footer__info a {
@@ -248,19 +251,15 @@ button {
     margin-bottom: 24px;
   }
   .c-footer__info p {
-    font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     margin-bottom: 24px;
   }
 }
 .c-btn {
   display: inline-block;
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
 }
 .c-btn--large {
   height: 72px;
@@ -303,10 +302,8 @@ button {
 }
 @media (max-width: 768px) {
   .c-btn--small {
-    font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     padding: 8px 16px;
   }
 }
@@ -324,7 +321,7 @@ button {
   color: #3B3B3B;
   margin-bottom: 24px;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
 }
 .p-hero__txt .icon-wrap {
   display: flex;
@@ -334,10 +331,8 @@ button {
 }
 .p-hero__p {
   color: #5B5B5B;
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
   margin-bottom: 16px;
 }
 .p-hero__p span::after {
@@ -352,10 +347,8 @@ button {
 }
 .p-hero__note {
   color: #C1C1C1;
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   margin-bottom: 60px;
 }
 .p-hero .icon-wrap img {
@@ -377,7 +370,7 @@ button {
   }
   .p-hero__txt h2 {
     font-size: 32px;
-    line-height: 38.4px;
+    line-height: 1.2;
   }
   .p-hero__note {
     margin-bottom: 24px;
@@ -403,7 +396,7 @@ button {
   align-items: center;
   letter-spacing: 4px;
   font-size: 32px;
-  line-height: 38.4px;
+  line-height: 1.2;
 }
 .p-portfolio h2::before {
   display: inline-block;
@@ -424,7 +417,7 @@ button {
 @media (max-width: 768px) {
   .p-portfolio h2 {
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 1.2;
     margin-bottom: 40px;
   }
   .p-portfolio h2::before {
@@ -610,15 +603,13 @@ button {
   .p-portfolio__txt h3 {
     color: #1E1E1E;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     text-align: center;
   }
   .p-portfolio__txt p {
     color: #5B5B5B;
-    font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     padding: 0 24px;
     margin-bottom: 16px;
     text-align: center;
@@ -646,7 +637,7 @@ button {
   align-items: center;
   letter-spacing: 4px;
   font-size: 32px;
-  line-height: 38.4px;
+  line-height: 1.2;
 }
 .p-intro h2::before {
   display: inline-block;
@@ -667,7 +658,7 @@ button {
 @media (max-width: 768px) {
   .p-intro h2 {
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 1.2;
     margin-bottom: 40px;
   }
   .p-intro h2::before {
@@ -716,15 +707,13 @@ button {
 }
 .p-intro__card p {
   color: #ffffff;
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 28px;
-  line-height: 42px;
 }
 @media (max-width: 768px) {
   .p-intro h3 {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     margin-bottom: 24px;
   }
   .p-intro__wrap {
@@ -738,7 +727,7 @@ button {
   }
   .p-intro__card p {
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 1.2;
   }
 }
 .p-article h2 {
@@ -750,7 +739,7 @@ button {
   align-items: center;
   letter-spacing: 4px;
   font-size: 32px;
-  line-height: 38.4px;
+  line-height: 1.2;
 }
 .p-article h2::before {
   display: inline-block;
@@ -771,7 +760,7 @@ button {
 @media (max-width: 768px) {
   .p-article h2 {
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 1.2;
     margin-bottom: 40px;
   }
   .p-article h2::before {
@@ -813,19 +802,15 @@ button {
   padding: 0 8px;
 }
 .p-article__info .tag {
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   padding: 4px 12px;
   border-radius: 16px;
   background-color: #F1F1F1;
 }
 .p-article__info .date {
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #5B5B5B;
 }
 .p-article__link {
@@ -915,10 +900,8 @@ button {
   margin: 0 20px;
 }
 .p-topbn ul li p {
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #5B5B5B;
   text-align: center;
 }
@@ -959,10 +942,8 @@ button {
     height: 0;
   }
   .p-topbn__title h4 {
-    font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
     margin: 0 37.5px;
   }
   .p-topbn__title:nth-child(1) {
@@ -1020,10 +1001,8 @@ button {
   }
 }
 .p-works__txt p {
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #919191;
 }
 .p-works__txt ul {
@@ -1037,8 +1016,6 @@ button {
   background: #F1F1F1;
   border-radius: 16px;
   color: #3B3B3B;
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif, serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
 }/*# sourceMappingURL=main.css.map */

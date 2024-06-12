@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
+    line-height: 1.5;
 }
 
 ul{
@@ -37,6 +38,10 @@ section{
     img{
         width: 100%;
     }
+}
+
+img{
+    vertical-align: middle;
 }
 
 button{

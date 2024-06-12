@@ -14,7 +14,7 @@
                 color: $gray-700;
                 margin-bottom: 24px;
                 font-size: 40px;
-                line-height: 48px;
+                line-height: 1.2;
             }
 
             .icon-wrap {
@@ -71,7 +71,7 @@
                 text-align: center;
                 h2{
                     font-size: 32px;
-                    line-height: 38.4px;
+                    line-height: 1.2;
                 }
             }
             &__note {
@@ -303,7 +303,7 @@
                 h3{
                     color: $gray-800;
                     font-size: 20px;
-                    line-height: 24px;
+                    line-height: 1.2;
                     text-align: center;
                 }
                 p{
@@ -379,7 +379,7 @@
         @media (max-width: 768px){
             h3{
                 font-size: 20px;
-                line-height: 24px;
+                line-height: 1.2;
                 margin-bottom: 24px;
             }
 
@@ -394,7 +394,7 @@
                 margin-bottom: 24px;
                 p{
                     font-size: 24px;
-                    line-height: 28.8px;
+                    line-height: 1.2;
                 
                 }
             }

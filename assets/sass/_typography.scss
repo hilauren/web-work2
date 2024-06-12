@@ -1,74 +1,62 @@
 h1{
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.2;
 }
 
 h2{
     font-size: 32px;
-    line-height: 38.4px;
+    line-height: 1.2;
 }
 
 h3{
     font-size: 28px;
-    line-height: 33.6px;
+    line-height: 1.2;
 }
 
 h4{
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 1.2;
 }
 
 h5{
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 
 h6{
     font-size: 16px;
-    line-height: 19.2px;
+    line-height: 1.2;
 }
 
 
 @mixin fs-1 {
-    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
     font-weight: 400;
     font-size: 40px;
-    line-height: 60px;
 }
 
 @mixin fs-2 {
-    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
     font-weight: 400;
     font-size: 32px;
-    line-height: 48px;
 }
 
 @mixin fs-3 {
-    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
     font-weight: 400;
     font-size: 28px;
-    line-height: 42px;
 }
 
 @mixin fs-4 {
-    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
     font-weight: 400;
     font-size: 24px;
-    line-height: 36px;
 }
 
 @mixin fs-5 {
-    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
 }
 
 @mixin fs-6 {
-    font-family: "Noto Sans TC", Helvetica , Arial , sans-serif , serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
 }
 
 
@@ -81,7 +69,7 @@ h6{
     align-items: center;
     letter-spacing: 4px;
     font-size: 32px;
-    line-height: 38.4px;
+    line-height: 1.2;
 
     &::before {
         display: inline-block;
@@ -105,7 +93,7 @@ h6{
 
     @media (max-width: 768px){
         font-size: 24px;
-        line-height: 28.8px;
+        line-height: 1.2;
         margin-bottom: 40px;
         &::before {
             display: inline-block;
